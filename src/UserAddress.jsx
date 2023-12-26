@@ -1,7 +1,7 @@
 import { useUserQuery } from './hooks/useUserQuery';
 
 export default function UserAddress() {
-	const result = useUserQuery();
+	const result = useUserQuery(2);
 	return (
 		<div className='UserAddress'>
 			<h1>User Address</h1>
