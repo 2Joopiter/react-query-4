@@ -11,8 +11,8 @@ export const useUserQuery = () => {
 };
 
 //
-const deleteUser = async ({ queryKey }) => {
-	const response = await fetch(`https://jsonplaceholder.typicode.com/users/${queryKey[1]}`, {
+const deleteUser = async (num) => {
+	const response = await fetch(`https://jsonplaceholder.typicode.com/users/${num[1]}`, {
 		method: 'DELETE',
 	});
 	return await response.json();
